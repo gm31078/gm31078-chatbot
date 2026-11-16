@@ -1,0 +1,16 @@
+{
+  "name": "gm31078-chatbot-vercel",
+  "version": "1.0.0",
+  "description": "Multi-model AI chatbot (OpenAI/ChatGPT, Claude, Groq, OpenRouter) for Vercel serverless deployment",
+  "main": "api/chat.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@vercel/node": "^3.0.0"
+  }
+}
