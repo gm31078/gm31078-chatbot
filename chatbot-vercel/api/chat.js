@@ -4,15 +4,20 @@ const MULTILINGUAL_SYSTEM = {
 };
 
 // Brain (Auto Select): order of models to try, free/fast ones first
+// (Groq retired llama-3.1-8b-instant & llama-3.3-70b-versatile on 2026-08-16;
+//  replacements: openai/gpt-oss-20b / openai/gpt-oss-120b)
 const BRAIN_CANDIDATES = [
-  'groq:llama-3.1-8b-instant',
+  'groq:openai/gpt-oss-20b',
+  'groq:openai/gpt-oss-120b',
+  'groq:qwen/qwen3.6-27b',
   'openrouter:meta-llama/llama-3.1-8b-instruct:free',
+  'openai:gpt-5-mini',
   'openai:gpt-4o-mini',
-  'anthropic:claude-3-haiku-20240307',
+  'anthropic:claude-haiku-4-5-20251001',
+  'anthropic:claude-3-5-haiku-20241022',
   'openrouter:deepseek/deepseek-chat',
-  'groq:llama-3.3-70b-versatile',
   'openai:gpt-4o',
-  'anthropic:claude-3-5-sonnet-20241022',
+  'anthropic:claude-sonnet-4-5-20250929',
   'openrouter:anthropic/claude-3.5-sonnet',
 ];
 
